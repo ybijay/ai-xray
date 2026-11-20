@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI X-Ray privacy policy</title>
+    <meta name="description" content="AI X-Ray doesn't collect, store or send any personal information." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img src="favicon.svg" alt="" width="36" height="36" />
+          AI X-Ray
+        </a>
+        <nav>
+          <a href="./">Home</a>
+          <a href="privacy.html" aria-current="page">Privacy</a>
+          <a href="https://github.com/ybijay/ai-xray/issues">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="policy">
+        <h1>AI X-Ray privacy policy</h1>
+        <p class="effective">Effective November 20, 2026</p>
+
+        <p>
+          AI X-Ray is a Windows app, published on the Microsoft Store by Bijay Yerra, an independent developer. It shows what AI
+          models running in Ollama are doing on your computer.
+        </p>
+
+        <h2>The short version</h2>
+        <div class="short">
+          <p>
+            AI X-Ray doesn't collect, store or send any personal information to us or to anyone else. There's no account, no
+            sign-in, no advertising, no analytics and no tracking.
+          </p>
+        </div>
+
+        <h2>What AI X-Ray reads on your computer</h2>
+        <p>To show it to you, the app reads:</p>
+        <ul>
+          <li>your graphics card's name, memory, load and, on NVIDIA cards, temperature and power</li>
+          <li>your processor's name and your memory (RAM) use</li>
+          <li>your Windows version and computer name</li>
+          <li>the names of programs that are using graphics memory</li>
+        </ul>
+        <p>This information is shown in the app's window and isn't sent anywhere.</p>
+
+        <h2>The connections AI X-Ray makes</h2>
+        <ul>
+          <li>
+            <strong>To Ollama.</strong> AI X-Ray talks to Ollama on your computer, or on another computer if you've pointed
+            Ollama's <code>OLLAMA_HOST</code> setting at one. The questions you type in "X-ray a prompt" and the speed test go to
+            that Ollama, which runs the model and sends the answer back. You control that Ollama; we never see what you type.
+          </li>
+          <li>
+            <strong>To model libraries, only when you look up a model.</strong> When you check a model in "Get a model", AI X-Ray
+            reads that model's details from the Ollama library (registry.ollama.ai), from Hugging Face (hf.co), or from another
+            model library if you type its address as part of the model name, just as Ollama itself would. Like any website visit,
+            that service sees your internet address and the model's name, and its own privacy policy applies. The download itself
+            is done by Ollama.
+          </li>
+          <li>
+            <strong>To the Microsoft Store, about your licence.</strong> The Store version asks Windows' Microsoft Store service
+            whether your copy is in its free trial or has been bought. When you buy it, the purchase happens in the Store's own
+            window and is handled by Microsoft; AI X-Ray never sees your payment details. Microsoft's privacy statement applies to
+            the Store.
+          </li>
+        </ul>
+        <p>AI X-Ray makes no other connections.</p>
+
+        <h2>What AI X-Ray keeps on your computer</h2>
+        <p>
+          The app saves a few things in its own folder on your PC so they're there next time: your zoom level, your speed-test
+          results, and context sizes it has learned for your models. Uninstalling the Microsoft Store version deletes them.
+        </p>
+        <p>
+          AI X-Ray draws its window with Microsoft Edge WebView2, which is part of Windows. Any diagnostic data WebView2 sends to
+          Microsoft follows your Windows settings.
+        </p>
+
+        <h2>Children</h2>
+        <p>AI X-Ray isn't aimed at children and collects nothing from anyone.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy or the app: <a href="https://github.com/ybijay/ai-xray/issues">github.com/ybijay/ai-xray/issues</a></p>
+      </article>
+    </main>
+
+    <footer class="site">
+      <div class="wrap">
+        <p>© 2026 Bijay Yerra · <a href="./">AI X-Ray</a> · Support: <a href="https://github.com/ybijay/ai-xray/issues">ask a question or report a problem</a></p>
+        <p>AI X-Ray is an independent app and isn't made by or affiliated with Ollama.</p>
+      </div>
+    </footer>
+  </body>
+</html>
