@@ -116,15 +116,18 @@ footer.site p {
   color: var(--muted);
   font-size: 20px;
 }
-.badge {
+.store {
   display: inline-block;
   margin-top: 24px;
-  padding: 8px 18px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 15px;
+  line-height: 0;
+}
+.store img {
+  height: auto;
+}
+.store:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 6px;
 }
 .needs {
   margin-top: 12px;
